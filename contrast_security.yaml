@@ -1,0 +1,20 @@
+application:
+  name: juice-shop
+  version: 12.8.1
+assess:
+  enable: true
+protect:
+  enable: false
+server:
+  environment: development
+agent:
+  logger:
+    path: /proc/1/fd/1
+    level: INFO
+    service:
+      enable: true
+      logger:
+        path: /proc/1/fd/1
+        level: INFO
+      host: 127.0.0.1
+      port: 30555
